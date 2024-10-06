@@ -1,4 +1,3 @@
-
 .header {
   background-color: var(--headerfooter-color);
   width: 100vw;
@@ -19,9 +18,16 @@
   padding-top: 2rem;
 }
 
-.mobile-menu{
+.mobile-menu {
   display: none;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
 }
+
+.mobile-menu.active {
+  transform: translateX(0);
+}
+
 
 .menu-icon {
   text-align: start;
@@ -32,12 +38,4 @@
   color: #FFF;
   cursor: pointer;
   display: none; 
-}
-
-.close-icon {
-  top: 1rem;
-  right: 1rem;
-  font-size: 24px;
-  color: #fff;
-  cursor: pointer;
 }

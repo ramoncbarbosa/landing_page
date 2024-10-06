@@ -1,0 +1,46 @@
+.blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(8px); 
+  z-index: 999;
+  display: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.blur-overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  padding: 20px;
+  transition: left 0.3s ease-in-out;
+}
+
+.mobile-menu.active {
+  left: 0;
+}
+
+.menu-icon {
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff;
+}
+
+.menu-close {
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+  display: none;
+}

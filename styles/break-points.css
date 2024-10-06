@@ -21,7 +21,7 @@
     left: -250px;
     width: 250px;
     height: 100vh;
-    background-color: #000d1f;
+    background-color: var(--headerfooter-color);
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -31,7 +31,7 @@
   }
 
   .mobile-menu a {
-    color: #fff;
+    color: var(--text-color);
     font-size: 24px;
     text-decoration: none;
   }
@@ -42,35 +42,35 @@
 
   .sobreMim {
     display: flex;
-    flex-direction: column-reverse; 
-    align-items: center; 
-    justify-content: center; 
-    text-align: start; 
-    padding: 1rem; 
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    padding: 1rem;
   }
 
   .sobremim_h3 {
-    margin: 0 auto; 
+    margin: 0 auto;
     padding: 1rem;
-    max-width: 90%; 
+    max-width: 90%;
   }
 
   .sobreMim > div > h3 {
-    font-size: 32px; 
+    font-size: 32px;
     color: var(--fonts-icons-img);
     margin-bottom: 1rem;
   }
-  
+
   .sobreMim > div > p {
-    text-align: start; 
-    font-size: 16px;  
+    text-align: start;
+    font-size: 16px;
     margin-bottom: 1rem;
   }
 
   .perfil {
     margin-top: 1.5rem;
-    max-width: 90%; 
-    height: auto; 
+    max-width: 90%;
+    height: auto;
   }
 
   footer > div {
@@ -79,8 +79,8 @@
   }
 
   .github-icon, .linkedin-icon {
-    font-size: 40px; 
-    color: #FFF;
+    font-size: 40px;
+    color: var(--text-color);
     cursor: pointer;
   }
 }
