@@ -1,5 +1,7 @@
+@import url('./variables.css');
+
 body {
-  background-color: #001939;
+  background-color: var(--bg-color);
   height: 100vh;
   width: 100vw;
   margin: 0; 
@@ -8,7 +10,7 @@ body {
 }
 
 .header {
-  background-color: #000d1f;
+  background-color: var(--headerfooter-color);
   width: 100vw;
   text-align: center;
 }
@@ -28,7 +30,7 @@ body {
 }
 
 .title, h1 {
-  color: #66DBCB;
+  color: var(--fonts-icons-img);
   font-size: 4rem; 
   margin: 0; 
 }
@@ -53,6 +55,8 @@ section{
   height: 550px;
   border-radius: 50%;
   background-color: #000d1f;
+  border: solid ;
+  border-color: #66DBCB;
 }
 
 
