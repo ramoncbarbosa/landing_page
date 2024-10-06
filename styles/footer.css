@@ -1,0 +1,31 @@
+footer {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+ 
+  width: 100%;
+  background-color: #000d1f;
+  padding: 1rem;
+}
+
+footer > div {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+  height: 6vh; 
+  margin: 4rem;
+}
+
+.github-icon, .linkedin-icon {
+  font-size: 50px; 
+  color: #FFF;
+  cursor: pointer;
+}
+
+.github-icon {
+  text-align: center;
+}
+
+.linkedin-icon {
+  text-align: center;
+}

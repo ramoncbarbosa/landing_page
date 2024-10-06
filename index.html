@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/break-points.css">
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/break-points.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -18,13 +20,26 @@
       <nav class="navegacao">
         <a class="ancoras" href="#sobre-mim">Sobre mim</a>
         <a class="ancoras" href="#experiencias">Experiências</a>
-        <a class="ancoras" href="#projetos">Projetos</a>
+        <a class="ancoras" href="#projetos">Projetos Pessoais</a>
         <a class="ancoras" href="#contato">Contato</a>
       </nav>
+
+      <div class="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="mobile-menu">
+        <div class="close-icon">
+          <i class="fas fa-times"></i>
+        </div>
+        <a class="ancoras" href="#sobre-mim">Sobre mim</a>
+        <a class="ancoras" href="#experiencias">Experiências</a>
+        <a class="ancoras" href="#projetos">Projetos Pessoais</a>
+        <a class="ancoras" href="#contato">Contato</a>
+      </div>
     </header>
     <main class="principal">
       <section class="sobreMim" id="sobre-mim">
-        <div>
+        <div class="sobremim_h3">
           <h3>Sobre mim</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
@@ -34,25 +49,29 @@
           </p>
         </div>
         <div>
-          <img src="https://avatars.githubusercontent.com/ramoncbarbosa" alt="minha foto" class="perfil">
+          <img
+            src="https://avatars.githubusercontent.com/ramoncbarbosa"
+            alt="minha foto"
+            class="perfil"
+          />
         </div>
       </section>
-      <hr/>
       <section class="experiencia" id="experiencias">
-        <h3>Experiências</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-          unde cupiditate distinctio deleniti, eligendi rerum illum optio
-          asperiores. Temporibus amet voluptatibus consequatur dolore natus rem
-          consequuntur reiciendis non voluptates earum.
-        </p>
+        <div>
+          <h3>Experiências</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            unde cupiditate distinctio deleniti, eligendi rerum illum optio
+            asperiores. Temporibus amet voluptatibus consequatur dolore natus
+            rem consequuntur reiciendis non voluptates earum.
+          </p>
+        </div>
         <div>
           <h2>Skills:</h2>
-          
         </div>
       </section>
       <section class="projetos" id="projetos">
-        <h3>Projetos</h3>
+        <h3>Projetos Pessoais</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
           unde cupiditate distinctio deleniti, eligendi rerum illum optio
@@ -63,17 +82,18 @@
     </main>
     <footer id="contato">
       <div>
-        <a href="">
-          <i class="fa-brands fa-square-github">
-            GitHub
-          </i>
-        </a>
-        <a href="">
-          <i class="fa-brands fa-linkedin">
-            Linkedin
-          </i>
-        </a>
+        <div class="github-icon">
+          <a href="https://github.com/ramoncbarbosa">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <div class="linkedin-icon">
+          <a href="https://www.linkedin.com/in/ramon-barbosa-712273237/">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,86 @@
+@import url('./reset.css');
+
+@media (max-width: 768px) {
+  .body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .navegacao {
+    display: none;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: #000d1f;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 2rem;
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+
+  .mobile-menu a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+  .mobile-menu.active {
+    left: 0;
+  }
+
+  .sobreMim {
+    display: flex;
+    flex-direction: column-reverse; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: start; 
+    padding: 1rem; 
+  }
+
+  .sobremim_h3 {
+    margin: 0 auto; 
+    padding: 1rem;
+    max-width: 90%; 
+  }
+
+  .sobreMim > div > h3 {
+    font-size: 32px; 
+    color: var(--fonts-icons-img);
+    margin-bottom: 1rem;
+  }
+  
+  .sobreMim > div > p {
+    text-align: start; 
+    font-size: 16px;  
+    margin-bottom: 1rem;
+  }
+
+  .perfil {
+    margin-top: 1.5rem;
+    max-width: 90%; 
+    height: auto; 
+  }
+
+  footer > div {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .github-icon, .linkedin-icon {
+    font-size: 40px; 
+    color: #FFF;
+    cursor: pointer;
+  }
+}

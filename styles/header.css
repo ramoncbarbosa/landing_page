@@ -1,0 +1,43 @@
+
+.header {
+  background-color: var(--headerfooter-color);
+  width: 100vw;
+  text-align: center;
+}
+
+.navegacao {
+  display: flex;
+  justify-content: center;
+  gap: 10rem; 
+  height: 10vh;
+}
+
+.ancoras {
+  color: #FFF;
+  font-size: 24px;
+  text-decoration: none; 
+  padding-top: 2rem;
+}
+
+.mobile-menu{
+  display: none;
+}
+
+.menu-icon {
+  text-align: start;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-size: 24px;
+  color: #FFF;
+  cursor: pointer;
+  display: none; 
+}
+
+.close-icon {
+  top: 1rem;
+  right: 1rem;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}

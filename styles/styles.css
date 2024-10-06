@@ -3,66 +3,64 @@
 body {
   background-color: var(--bg-color);
   height: 100vh;
-  width: 100vw;
-  margin: 0; 
   display: flex;
   flex-direction: column;
 }
 
-.header {
-  background-color: var(--headerfooter-color);
-  width: 100vw;
-  text-align: center;
-}
-
-.navegacao {
-  display: flex;
-  justify-content: center;
-  gap: 10rem; 
-  height: 10vh;
-}
-
-.ancoras {
-  color: #FFF;
-  font-size: 24px;
-  text-decoration: none; 
-  padding-top: 2rem;
+p {
+  color: #fff;
 }
 
 .title, h1 {
   color: var(--fonts-icons-img);
   font-size: 4rem; 
-  margin: 0; 
 }
 
-section{
-  height: 100vh;
+section {
+  height: 100vh; 
+  overflow: hidden; 
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
   text-align: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
-.sobreMim{
-  justify-content: space-between;
-}
-
-.perfil{
-  width: 550px;
-  height: 550px;
-  border-radius: 50%;
-  background-color: #000d1f;
-  border: solid ;
-  border-color: #66DBCB;
-}
-
-
-footer{
+.sobreMim {
   display: flex;
-  height: 40vh;
-  width: 100vw;
-  background-color: #000d1f;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: center; 
+  gap: 2rem; 
+  margin-left: 2rem; 
+}
+
+.sobreMim > div {
+  flex: 1; 
+}
+
+.sobremim_h3{
+  margin-left: 8rem;
+}
+
+.sobreMim > div > h3 {
+  text-align: start;
+  font-size: 68px;
+  color: var(--fonts-icons-img);
+  margin-bottom: 1rem; 
+}
+
+.sobreMim > div > p {
+  font-size: 24px;
+  text-align: justify;
+}
+
+
+.perfil {
+  width: 500px; 
+  height: 500px; 
+  border-radius: 50%;
+  border: solid;
+  border-color: var(--fonts-icons-img);
 }
