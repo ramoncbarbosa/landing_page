@@ -2,14 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="theme-color" content="#303f64" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#001939" media="(prefers-color-scheme: dark)">    
+    <meta
+      name="theme-color"
+      content="#303f64"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#303f64"
+      media="(prefers-color-scheme: dark)"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/menu-mobile.css" />
+    <link rel="stylesheet" href="./styles/carousel.css" />
     <link rel="stylesheet" href="./styles/break-points.css" />
     <link
       rel="stylesheet"
@@ -81,12 +90,27 @@
       </section>
       <section class="projetos" id="projetos">
         <h3>Projetos Pessoais</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-          unde cupiditate distinctio deleniti, eligendi rerum illum optio
-          asperiores. Temporibus amet voluptatibus consequatur dolore natus rem
-          consequuntur reiciendis non voluptates earum.
-        </p>
+        <p>Aqui estão alguns dos projetos nos quais já atuei:</p>
+        <div class="carousel">
+          <div class="carousel-track-container">
+            <ul class="carousel-track">
+              <li class="carousel-slide">
+                <img src="https://via.placeholder.com/800x600.png?text=Projeto+1" alt="Projeto 1">
+              </li>
+              <li class="carousel-slide">
+                <img src="https://via.placeholder.com/800x600.png?text=Projeto+2" alt="Projeto 2">
+              </li>
+              <li class="carousel-slide">
+                <img src="https://via.placeholder.com/800x600.png?text=Projeto+3" alt="Projeto 3">
+              </li>
+            </ul>
+          </div>
+          <div class="carousel-buttons-container">
+            <button class="carousel-btn prev-btn">&#10094;</button>
+            <button class="carousel-btn next-btn">&#10095;</button>
+          </div>
+        </div>
+        
       </section>
     </main>
     <footer id="contato">
@@ -103,6 +127,7 @@
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/carousel.js"></script>
   </body>
 </html>
